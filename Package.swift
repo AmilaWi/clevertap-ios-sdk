@@ -21,13 +21,11 @@ let package = Package(
             targets: ["CleverTapWatchOS"]
         )
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.21.0")
+    ],
     targets: [
-        .binaryTarget(
-            name: "SDWebImage",
-            url: "https://github.com/SDWebImage/SDWebImage/releases/download/5.21.0/SDWebImage-dynamic.xcframework.zip",
-            checksum: "e034ea04f5e86866bc3081d009941bd5b2a2ed705b3a06336656484514116638"
-        ),
+        
         .binaryTarget(
             name: "CleverTapSDK",
             url: "https://d1new0xr8otir0.cloudfront.net/CleverTapSDK-7.3.3.xcframework.zip",
