@@ -56,7 +56,7 @@ let package = Package(
             path: "CleverTapSDKWrapper",
             linkerSettings: [
                 .linkedLibrary("sqlite3"),
-                .linkedFramework("SDWebImageBinary", .when(platforms: [.iOS]))
+                .linkedFramework("SDWebImage", .when(platforms: [.iOS]))
             ]
         ),
         .target(
